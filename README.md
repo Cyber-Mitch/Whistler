@@ -1,66 +1,19 @@
-## Foundry
+## Description
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**Whistler: A Decentralized Whistleblowing Platform**
 
-Foundry consists of:
+ Whistler is a blockchain-powered platform designed to facilitate anonymous whistleblowing while promoting transparency and accountability. It aims to provide a secure space for individuals to expose misconduct without fear of immediate reprisal.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Key Features
 
-## Documentation
+**Anonymized Report Submission:**
 
-https://book.getfoundry.sh/
+Anonymized Report Submission: Users generate cryptographic commitments representing their reports, initially shielding the report's actual content.
 
-## Usage
+Decentralized Storage: Report contents are stored off-chain on IPFS, ensuring resilience and mitigating censorship risks.
 
-### Build
+Upvoting: Users can anonymously upvote reports, signaling credibility and increasing visibility of important disclosures.
 
-```shell
-$ forge build
-```
+Commenting: On-chain commenting is available to provide discussion space and additional context around reports.
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Duplicate Prevention: The system implements measures to deter duplicate upvoting, aiming to enhance the integrity of the voting system.
